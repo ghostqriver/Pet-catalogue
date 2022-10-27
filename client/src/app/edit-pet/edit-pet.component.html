@@ -1,0 +1,26 @@
+<div class="container">
+<form >
+  <div class="form-example">
+    <label>name: </label>
+    <input name="name" type="text" [(ngModel)]="model.name" />
+  </div>
+  <div class="form-example">
+    <label>species: </label>
+    <input type="text" [(ngModel)]="model.species" name="species"/>
+  </div>
+  <div class="form-example">
+    <label>date_birth: </label>
+    <input type="date" [(ngModel)]="model.date_birth" name="date_birth"/>
+  </div>
+  <div *ngIf="isEdit" class="form-example">
+    <label>date_death: </label>
+    <input type="date" [(ngModel)]="model.date_death" name="date_death"/>
+  </div>
+  <div class="form-example">
+    <label>remark: </label>
+    <textarea type="text" [(ngModel)]="model.remark" name="remark">
+    </textarea>
+  </div>
+  <button (click)="submit()">save</button>
+</form>
+</div>

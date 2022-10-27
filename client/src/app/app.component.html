@@ -1,0 +1,10 @@
+<div class="container">
+  <img (click)="goHome()" class="img" src="../assets/logo.png" alt="">
+  <ul class="nav_list" >
+    <li [class]="{nav_list_select: isSelect === key}" (click)="goNav(item.path, key)" *ngFor="let item of list;let key = index">
+      {{item.title}}
+    </li>
+  </ul>
+
+<router-outlet></router-outlet>
+</div>
