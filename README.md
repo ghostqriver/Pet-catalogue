@@ -1,4 +1,4 @@
-#Pet catalogue
+# Pet catalogue
 
 ## Description
 This project serves as an assignment project for the Web engineering subject, The client application was written in 
